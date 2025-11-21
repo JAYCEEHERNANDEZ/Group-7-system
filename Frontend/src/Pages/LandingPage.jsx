@@ -2,7 +2,11 @@ import { Routes, Route, Link } from "react-router-dom";
 import AdminLogin from "./AdminLogin";
 import ResidentLogin from "./ResidentLogin";
 import MeterReaderLogin from "./MeterReaderLogin";
+import Dashboard from "./Dashboard";
+import ResidentDashboard from "./ResidentDashboard";
+import NotificationCenter from "./NotificationCenter";
 import '../App.css'
+
 
 export default function LandingPage() {
   return (
@@ -61,6 +65,9 @@ export default function LandingPage() {
       <Route path="/resident-login" element={<ResidentLogin />} />
       <Route path="/meter-reader" element={<MeterReaderLogin />} />
       <Route path="/landing-page" element={<LandingPage />} />
+      <Route path="/admin-dashboard" element={<Dashboard />} />
+      <Route path="/resident-dashboard" element={<ResidentDashboard />} />
+      <Route path="/notification-center" element={<NotificationCenter />} />
     </Routes>
   );
 }

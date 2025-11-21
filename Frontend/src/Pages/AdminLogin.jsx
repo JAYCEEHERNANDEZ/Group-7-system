@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function AdminLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -24,8 +25,9 @@ export default function AdminLogin() {
       if (data.success) {
         if (data.data.role === "admin") {
           setMessage("Login successful! Welcome Admin.");
-          // Optionally redirect to admin dashboard
-          // navigate("/admin-dashboard");
+
+          // 🚀 Redirect after success
+          window.location.href = "/admin-dashboard";
         } else {
           setMessage("You are not authorized as an Admin");
         }

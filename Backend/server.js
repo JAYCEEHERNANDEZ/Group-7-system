@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // Test endpoint
 app.get("/", (req, res) => {
-  res.send("Backend is running!");
+  res.send("Backend is running!");  
 });
 
 // Use login route

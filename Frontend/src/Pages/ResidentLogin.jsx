@@ -25,7 +25,7 @@ export default function ResidentLogin() {
         if (data.data.role === "resident") {
           setMessage("Login successful! Welcome Resident.");
           // Optionally redirect to resident dashboard
-          // navigate("/resident-dashboard");
+          window.location.href = "/resident-dashboard";
         } else {
           setMessage("You are not authorized as a Resident");
         }

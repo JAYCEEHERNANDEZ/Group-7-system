@@ -26,7 +26,7 @@ export default function MeterReaderLogin() {
         if (data.data.role === "meterreader") {
           setMessage("Login successful! Welcome Meter Reader.");
           // Optionally redirect to meter reader dashboard
-          // navigate("/meter-dashboard");
+          // navigate("/meter-dashboard")
         } else {
           setMessage("You are not authorized as a Meter Reader");
         }
