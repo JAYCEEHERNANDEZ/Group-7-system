@@ -22,7 +22,7 @@ export default function ResidentLogin() {
       const data = await res.json();
 
       if (data.success) {
-        if (data.data.role === "resident") {
+        if (data.data.role === "user") {
           setMessage("Login successful! Welcome Resident.");
           // Optionally redirect to resident dashboard
           window.location.href = "/resident-dashboard";
